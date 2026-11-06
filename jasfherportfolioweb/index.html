@@ -1,96 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jasfher Pantoja - Personal Portfolio Website showcasing data analytics, programming projects, and certificates.">
-    <title>Jasfher Pantoja | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jasfher | Aspiring Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Jasfher, a third-year Computer Science student building data analytics projects with SQL, Python, pandas, and Power BI.">
+  <meta name="author" content="Jasfher">
+  <meta name="theme-color" content="#0b1d33">
+ 
+  <!-- Open Graph (link previews when shared) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jasfher | Aspiring Data Analyst Portfolio">
+  <meta property="og:description" content="Data analytics projects using SQL, Python, pandas, and Power BI.">
+  <!-- TODO: replace with your deployed URL after publishing -->
+  <meta property="og:url" content="https://keithkeith21.github.io/">
+ 
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1d33'/%3E%3Cpath d='M24 16v22a6 6 0 0 1-12 0' fill='none' stroke='%232dd4bf' stroke-width='6' stroke-linecap='round'/%3E%3Crect x='34' y='34' width='6' height='14' rx='2' fill='%23fbbf24'/%3E%3Crect x='44' y='24' width='6' height='24' rx='2' fill='%232dd4bf'/%3E%3C/svg%3E">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">JP<span>.</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects & Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-<!-- Home Section -->
+  <a class="skip-link" href="#main">Skip to content</a>
+ 
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Jasfher, back to top">
+        <svg class="logo-mark" viewBox="0 0 64 64" role="img" aria-label="Jasfher logo: a letter J beside two bars of a chart">
+          <rect width="64" height="64" rx="14" fill="#0b1d33"/>
+          <path d="M24 16v22a6 6 0 0 1-12 0" fill="none" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round"/>
+          <rect x="34" y="34" width="6" height="14" rx="2" fill="#fbbf24"/>
+          <rect x="44" y="24" width="6" height="24" rx="2" fill="#2dd4bf"/>
+        </svg>
+        <span class="logo-text">Jasfher</span>
+      </a>
+ 
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+ 
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects &amp; Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main id="main">
+ 
+    <!-- ===== HOME ===== -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Jasfher Pantoja</span></h1>
-            <p>CS Student & Aspiring Data Analyst / Engineer</p>
-            <a href="#projects" class="btn">View My Work</a>
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Aspiring Data Analyst &bull; Future Data Engineer</p>
+          <h1>Hi, I'm <span class="accent">Jasfher</span>.<br>I turn raw data into clear answers.</h1>
+          <p class="lead">
+            I'm a third-year Computer Science student who builds data analytics projects
+            with SQL, Python, and Power BI. I care about understanding why each step works,
+            not just memorizing syntax.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>Hello! I am 3rd year computer science student. I have a strong passion for self-directed technical training in data analytics, database management (MySQL/postgreSQL), Data visualization and Iteractive Dashboard using (PowerBI / tableu), and lastly data manipulation using (Python Pandas).</p>
-                <h3>My Skills</h3>
-                <div class="skills-grid">
-                    <span>Python (Pandas)</span>
-                    <span>MySQL & PostgreSQL</span>
-                    <span>PowerBI</span>
-                    <span>Git & GitHub</span>
-                    <span>Problem Solving</span>
-                </div>
-            </div>
+ 
+        <div class="hero-visual reveal" aria-hidden="false">
+          <svg viewBox="0 0 400 320" role="img" aria-label="Illustration of a data dashboard with bar charts, a line trend, and a database icon">
+            <rect x="10" y="10" width="380" height="300" rx="22" fill="#12304f"/>
+            <rect x="30" y="34" width="150" height="14" rx="7" fill="#1e4a75"/>
+            <rect x="30" y="64" width="110" height="64" rx="12" fill="#0b1d33"/>
+            <rect x="150" y="64" width="110" height="64" rx="12" fill="#0b1d33"/>
+            <rect x="270" y="64" width="100" height="64" rx="12" fill="#0b1d33"/>
+            <rect x="44" y="82" width="50" height="8" rx="4" fill="#2dd4bf"/>
+            <rect x="44" y="100" width="76" height="10" rx="5" fill="#fbbf24"/>
+            <rect x="164" y="82" width="50" height="8" rx="4" fill="#2dd4bf"/>
+            <rect x="164" y="100" width="64" height="10" rx="5" fill="#fbbf24"/>
+            <rect x="284" y="82" width="50" height="8" rx="4" fill="#2dd4bf"/>
+            <rect x="284" y="100" width="48" height="10" rx="5" fill="#fbbf24"/>
+            <rect x="30" y="146" width="210" height="150" rx="12" fill="#0b1d33"/>
+            <rect x="50" y="236" width="22" height="40" rx="5" fill="#1e4a75"/>
+            <rect x="82" y="212" width="22" height="64" rx="5" fill="#2dd4bf"/>
+            <rect x="114" y="226" width="22" height="50" rx="5" fill="#1e4a75"/>
+            <rect x="146" y="182" width="22" height="94" rx="5" fill="#2dd4bf"/>
+            <rect x="178" y="200" width="22" height="76" rx="5" fill="#fbbf24"/>
+            <polyline points="50,214 82,196 114,206 146,164 200,176" fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="254" y="146" width="116" height="150" rx="12" fill="#0b1d33"/>
+            <ellipse cx="312" cy="180" rx="30" ry="10" fill="#2dd4bf"/>
+            <path d="M282 180v34c0 6 13 11 30 11s30-5 30-11v-34" fill="none" stroke="#2dd4bf" stroke-width="3"/>
+            <path d="M282 197c0 6 13 11 30 11s30-5 30-11" fill="none" stroke="#2dd4bf" stroke-width="3"/>
+            <path d="M282 214v34c0 6 13 11 30 11s30-5 30-11v-34" fill="none" stroke="#1e4a75" stroke-width="3"/>
+          </svg>
         </div>
+      </div>
+ 
+      <div class="container">
+        <ul class="stats reveal">
+          <li><strong>3</strong><span>Data projects</span></li>
+          <li><strong>SQL + Python</strong><span>Core tools</span></li>
+          <li><strong>3rd Year</strong><span>BS Computer Science</span></li>
+        </ul>
+      </div>
     </section>
-
-    <!-- Projects & Certificates Section -->
-    <section id="projects" class="projects">
-        <h2>Projects & Certificates</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Arduino-Powered RFID Security Lock</h3>
-                <p>An automated access control prototype utilizing an Arduino microcontroller, RFID reader, servo motor, and LCD display for enhanced institutional lab security.</p>
-                <span class="tag">Embedded Systems / C++</span>
+ 
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>A student who loves seeing data come alive</h2>
+        </header>
+ 
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm Jasfher, a third-year Computer Science student. My interest in data started in
+              Grade 12, when I watched a school database demo and saw the data I typed in appear
+              as real output. That moment made me want to work with data for a living.
+            </p>
+            <p>
+              Since second year, I've been teaching myself data analytics. I download datasets from
+              Kaggle, clean them, design the data model, and turn them into dashboards. I enjoy
+              tools that involve coding, and I focus on the reasoning behind every step so I can
+              apply it to new problems.
+            </p>
+            <p>
+              My goal is to become a Data Engineer. I'm starting as a Data Analyst to build a strong
+              foundation, and I'm looking for an on-the-job training (OJT) opportunity in a
+              data-related role.
+            </p>
+          </div>
+ 
+          <div class="skills reveal">
+            <h3>Skills</h3>
+ 
+            <div class="skill-group">
+              <h4>Strong</h4>
+              <ul class="tags">
+                <li>SQL (MySQL)</li>
+                <li>Python</li>
+                <li>pandas</li>
+                <li>Data modeling</li>
+                <li>Star schema design</li>
+              </ul>
             </div>
-            <div class="project-card">
-                <h3>E-Commerce & Data Analytics Dashboard</h3>
-                <p>Data exploration and cleaning workflows utilizing Python Pandas and MySQL window functions to analyze user metrics and trends.</p>
-                <span class="tag">Data Analytics / Python</span>
+ 
+            <div class="skill-group">
+              <h4>Working with</h4>
+              <ul class="tags tags-alt">
+                <li>Power BI</li>
+                <li>Data cleaning</li>
+                <li>GitHub</li>
+              </ul>
             </div>
-            <div class="project-card">
-                <h3>Academic Coursework Certificates</h3>
-                <p>Recognitions and completions from university-level programming, linear transformations, and systems engineering projects.</p>
-                <span class="tag">Certificates</span>
+ 
+            <div class="skill-group">
+              <h4>Currently learning</h4>
+              <ul class="tags tags-learning">
+                <li>Window functions</li>
+                <li>CTEs &amp; subqueries</li>
+                <li>Advanced Power BI</li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Got a project in mind or want to collaborate? Reach out to me!</p>
-        <form class="contact-form" onsubmit="alert('Thank you! Your message has been sent.'); return false;">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+ 
+    <!-- ===== PROJECTS & CERTIFICATES ===== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Projects &amp; Certificates</p>
+          <h2>What I've built so far</h2>
+          <p class="section-sub">Each project follows the same path: clean the data, model it, analyze it, and present the results.</p>
+        </header>
+ 
+        <div class="cards">
+ 
+          <!-- Project 1 -->
+          <article class="card reveal">
+            <svg class="card-thumb" viewBox="0 0 320 150" role="img" aria-label="Bar chart thumbnail representing the financial consumer project">
+              <rect width="320" height="150" fill="#12304f"/>
+              <rect x="40" y="80" width="30" height="50" rx="6" fill="#1e4a75"/>
+              <rect x="90" y="56" width="30" height="74" rx="6" fill="#2dd4bf"/>
+              <rect x="140" y="70" width="30" height="60" rx="6" fill="#1e4a75"/>
+              <rect x="190" y="36" width="30" height="94" rx="6" fill="#2dd4bf"/>
+              <rect x="240" y="50" width="30" height="80" rx="6" fill="#fbbf24"/>
+            </svg>
+            <div class="card-body">
+              <p class="card-meta">Completed &bull; Data analytics</p>
+              <h3>Financial Consumer Analysis</h3>
+              <p>
+                An analysis of consumer financial data that looks at spending patterns and
+                customer behavior. I organized the raw dataset into clean tables and wrote SQL
+                queries to answer business questions, then presented the results in a dashboard.
+              </p>
+              <ul class="tags tags-small">
+                <li>MySQL</li><li>Power BI</li><li>Data modeling</li>
+              </ul>
+              <!-- TODO: replace with your real repository link -->
+              <a class="card-link" href="https://github.com/keithkeith21/Financial_Consumer_Analysis" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+            </div>
+          </article>
+ 
+          <!-- Project 2 -->
+          <article class="card reveal">
+            <svg class="card-thumb" viewBox="0 0 320 150" role="img" aria-label="Line chart thumbnail representing the e-commerce project">
+              <rect width="320" height="150" fill="#12304f"/>
+              <polyline points="30,110 80,90 130,100 180,60 230,70 290,30" fill="none" stroke="#2dd4bf" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="80" cy="90" r="6" fill="#fbbf24"/>
+              <circle cx="180" cy="60" r="6" fill="#fbbf24"/>
+              <circle cx="290" cy="30" r="6" fill="#fbbf24"/>
+            </svg>
+            <div class="card-body">
+              <p class="card-meta">Completed &bull; Data analytics</p>
+              <h3>E-Commerce Sales Analysis</h3>
+              <p>
+                A study of online store data covering orders, products, and customers. I designed a
+                star schema so sales could be analyzed by product, customer, and time, then built
+                dashboard visuals to show which areas drive the most revenue.
+              </p>
+              <ul class="tags tags-small">
+                <li>MySQL</li><li>Star schema</li><li>Power BI</li>
+              </ul>
+              <!-- TODO: replace with your real repository link -->
+              <a class="card-link" href="https://github.com/keithkeith21/e-commerce_analytics" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+            </div>
+          </article>
+ 
+          <!-- Project 3 -->
+          <article class="card reveal">
+            <svg class="card-thumb" viewBox="0 0 320 150" role="img" aria-label="Database and chart thumbnail representing the healthcare data project">
+              <rect width="320" height="150" fill="#12304f"/>
+              <ellipse cx="110" cy="45" rx="45" ry="14" fill="#2dd4bf"/>
+              <path d="M65 45v50c0 8 20 14 45 14s45-6 45-14V45" fill="none" stroke="#2dd4bf" stroke-width="4"/>
+              <path d="M65 70c0 8 20 14 45 14s45-6 45-14" fill="none" stroke="#2dd4bf" stroke-width="4"/>
+              <rect x="200" y="80" width="24" height="40" rx="5" fill="#fbbf24"/>
+              <rect x="234" y="56" width="24" height="64" rx="5" fill="#2dd4bf"/>
+              <rect x="268" y="70" width="24" height="50" rx="5" fill="#1e4a75"/>
+            </svg>
+            <div class="card-body">
+              <p class="card-meta">Almost done &bull; Python + SQL + BI</p>
+              <h3>Healthcare Patient Records</h3>
+              <p>
+                My most complete pipeline so far. I clean a patient records dataset with Python and
+                pandas, build a star schema and all transformations in MySQL, and then connect the
+                result to Power BI for the final dashboard.
+              </p>
+              <ul class="tags tags-small">
+                <li>Python</li><li>pandas</li><li>MySQL</li><li>Power BI</li>
+              </ul>
+              <!-- TODO: replace with your real repository link -->
+              <a class="card-link" href="https://github.com/YOUR-USERNAME/healthcare-project" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+            </div>
+          </article>
+        </div>
+ 
+        <!-- Certificates -->
+        <header class="section-head section-head-sub reveal">
+          <h3 class="subheading">Certificates</h3>
+        </header>
+ 
+        <div class="cards cards-certs">
+          <!--
+            TEMPLATE: copy this block for each real certificate you earn.
+ 
+            <article class="card cert reveal">
+              <div class="card-body">
+                <p class="card-meta">Issuer name &bull; Month Year</p>
+                <h3>Certificate title</h3>
+                <p>One sentence on what you learned.</p>
+                <a class="card-link" href="LINK-TO-CERTIFICATE" target="_blank" rel="noopener noreferrer">View certificate &rarr;</a>
+              </div>
+            </article>
+          -->
+          <article class="card cert reveal">
+            <div class="card-body">
+              <p class="card-meta">In progress</p>
+              <h3>More certificates coming soon</h3>
+              <p>
+                I'm continuing my studies in Python, SQL, and Power BI, and I'll add certificates
+                here as I earn them.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Jasfher Pantoja. All rights reserved. | <a href="#home">Back to top</a></p>
-    </footer>
-
-    <script src="script.js"></script>
+ 
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's work together</h2>
+          <p class="section-sub">I'm open to OJT and internship opportunities in data analytics. Send me a message and I'll reply as soon as I can.</p>
+        </header>
+ 
+        <div class="contact-grid">
+          <ul class="contact-list reveal">
+            <li>
+              <span class="contact-label">Email</span>
+              <!-- TODO: replace with your real email -->
+              <a href="mailto:your.email@example.com">your.obinaXiwa.com</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <!-- TODO: replace with your GitHub profile -->
+              <a href="https://github.com/keithkeith21" target="_blank" rel="noopener noreferrer">github.com/Keithkeith21</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <!-- TODO: replace with your LinkedIn profile -->
+              <a href="https://www.linkedin.com/in/jasfher-pantoja-400ba5418/" target="_blank" rel="noopener noreferrer">linkedin.com/in/Jasfher Pantoja</a>
+            </li>
+          </ul>
+ 
+          <form id="contact-form" class="contact-form reveal" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+ 
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+ 
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+ 
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Jasfher. All rights reserved.</p>
+      <p class="tagline">Turning raw data into clear answers.</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
 </body>
 </html>
