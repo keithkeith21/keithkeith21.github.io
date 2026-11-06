@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jasfher Pantoja - Personal Portfolio Website showcasing data analytics, programming projects, and certificates.">
+    <title>Jasfher Pantoja | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">JP<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects & Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+<!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Jasfher Pantoja</span></h1>
+            <p>CS Student & Aspiring Data Analyst / Engineer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hello! I am 3rd year computer science student. I have a strong passion for self-directed technical training in data analytics, database management (MySQL/postgreSQL), Data visualization and Iteractive Dashboard using (PowerBI / tableu), and lastly data manipulation using (Python Pandas).</p>
+                <h3>My Skills</h3>
+                <div class="skills-grid">
+                    <span>Python (Pandas)</span>
+                    <span>MySQL & PostgreSQL</span>
+                    <span>PowerBI</span>
+                    <span>Git & GitHub</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Certificates Section -->
+    <section id="projects" class="projects">
+        <h2>Projects & Certificates</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Arduino-Powered RFID Security Lock</h3>
+                <p>An automated access control prototype utilizing an Arduino microcontroller, RFID reader, servo motor, and LCD display for enhanced institutional lab security.</p>
+                <span class="tag">Embedded Systems / C++</span>
+            </div>
+            <div class="project-card">
+                <h3>E-Commerce & Data Analytics Dashboard</h3>
+                <p>Data exploration and cleaning workflows utilizing Python Pandas and MySQL window functions to analyze user metrics and trends.</p>
+                <span class="tag">Data Analytics / Python</span>
+            </div>
+            <div class="project-card">
+                <h3>Academic Coursework Certificates</h3>
+                <p>Recognitions and completions from university-level programming, linear transformations, and systems engineering projects.</p>
+                <span class="tag">Certificates</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Got a project in mind or want to collaborate? Reach out to me!</p>
+        <form class="contact-form" onsubmit="alert('Thank you! Your message has been sent.'); return false;">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jasfher Pantoja. All rights reserved. | <a href="#home">Back to top</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
