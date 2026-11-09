@@ -96,14 +96,22 @@
       headers: { Accept: "application/json" }
     })
       .then(function (response) {
-        if (!response.ok) throw new Error("Request failed");
-        status.className = "form-status";
-        status.textContent = "Thank you! Your message has been sent.";
-        form.reset();
+        return response.json().catch(function () { return {}; }).then(function (data) {
+          if (!response.ok) {
+            var detail = data.errors && data.errors.length
+              ? data.errors.map(function (err) { return err.message; }).join(", ")
+              : "Error " + response.status;
+            throw new Error(detail);
+          }
+          status.className = "form-status";
+          status.textContent = "Thank you! Your message has been sent.";
+          form.reset();
+        });
       })
-      .catch(function () {
+      .catch(function (err) {
+        console.error("Form error:", err);
         status.className = "form-status error";
-        status.textContent = "Sorry, something went wrong. Please try again later.";
+        status.textContent = "Sorry, something went wrong (" + err.message + "). Please try again later.";
       })
       .then(function () {
         sendButton.disabled = false;
