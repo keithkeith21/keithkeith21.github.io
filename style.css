@@ -266,3 +266,12 @@ ul { margin: 0; padding: 0; list-style: none; }
   .stats { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; }
 }
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--teal);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
